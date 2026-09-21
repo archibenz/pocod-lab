@@ -1,0 +1,11 @@
+services:
+  webserver:
+    build: ./webserver
+    container_name: pocod-compose-server
+    ports:
+      - "8000:8000"
+  webclient:
+    build: ./webclient
+    container_name: pocod-compose-client
+    depends_on:
+      - webserver

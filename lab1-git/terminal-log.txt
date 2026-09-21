@@ -1,0 +1,68 @@
+### 1. Проверка установленного Git
+git version 2.51.0
+
+### 2. Создание локального репозитория
+Initialized empty Git repository in /private/tmp/pocod/lab1/MyProject/.git/
+
+### 3. Состояние пустого репозитория
+On branch main
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+### 4. Создание файла и проверка состояния
+?? README.md
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+### 5. Добавление файла в индекс (git add)
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   README.md
+
+
+### 6. Фиксация изменений (git commit)
+[main (root-commit) 9dc893f] Первый коммит: добавлен README.md
+ 1 file changed, 4 insertions(+)
+ create mode 100644 README.md
+
+### 7. Внесение изменений и повторная фиксация
+ M README.md
+[main e6c0a16] Дополнено описание цели работы
+ 1 file changed, 3 insertions(+)
+
+### 8. История коммитов
+e6c0a16 (HEAD -> main) Дополнено описание цели работы
+9dc893f Первый коммит: добавлен README.md
+### 9. Создание репозитория на GitHub
+https://github.com/archibenz/pocod-lab
+
+### 10. Подключение удалённого репозитория
+origin	https://github.com/archibenz/pocod-lab.git (fetch)
+origin	https://github.com/archibenz/pocod-lab.git (push)
+
+### 11. Отправка локального репозитория на GitHub (git push)
+To https://github.com/archibenz/pocod-lab.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+### 12. Состояние после push
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+e6c0a16 (HEAD -> main, origin/main) Дополнено описание цели работы
+9dc893f Первый коммит: добавлен README.md

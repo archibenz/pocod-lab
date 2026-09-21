@@ -1,0 +1,11 @@
+services:
+  webserver:
+    image: alpineapache:1.0
+    container_name: pocod-apache-server
+    ports:
+      - "8081:80"
+  webclient:
+    build: ./webclient-apache
+    container_name: pocod-apache-client
+    depends_on:
+      - webserver

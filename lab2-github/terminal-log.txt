@@ -1,0 +1,35 @@
+### 1. Текущая ветка и состояние
+* main
+  remotes/origin/main
+
+### 2. Создание дополнительной ветки
+Switched to a new branch 'feature-docs'
+* feature-docs
+  main
+
+### 3. Внесение нескольких изменений в ветке
+[feature-docs a21b6f4] Добавлено описание практических работ по Docker
+ 1 file changed, 4 insertions(+)
+[feature-docs 91bd8f5] Добавлено описание лабораторных работ по JMeter
+ 1 file changed, 4 insertions(+)
+[feature-docs eee8c5a] Обновлён README: добавлен состав репозитория
+ 1 file changed, 5 insertions(+)
+
+### 4. История ветки
+eee8c5a (HEAD -> feature-docs) Обновлён README: добавлен состав репозитория
+91bd8f5 Добавлено описание лабораторных работ по JMeter
+a21b6f4 Добавлено описание практических работ по Docker
+e6c0a16 (origin/main, main) Дополнено описание цели работы
+
+### 5. Отправка ветки на GitHub
+remote:      https://github.com/archibenz/pocod-lab/pull/new/feature-docs        
+remote: 
+To https://github.com/archibenz/pocod-lab.git
+ * [new branch]      feature-docs -> feature-docs
+branch 'feature-docs' set up to track 'origin/feature-docs'.
+
+### 6. Создание pull request
+https://github.com/archibenz/pocod-lab/pull/1
+
+### 7. Список pull request'ов
+1	Добавлено описание материалов по Docker и JMeter	feature-docs	OPEN	2026-09-21T11:10:45Z
