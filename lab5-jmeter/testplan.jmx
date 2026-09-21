@@ -68,15 +68,6 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion - наличие слова Яндекс" enabled="true">
-          <collectionProp name="Asserion.test_strings">
-            <stringProp name="yandex">Яндекс</stringProp>
-          </collectionProp>
-          <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
-          <boolProp name="Assertion.assume_success">false</boolProp>
-          <intProp name="Assertion.test_type">16</intProp>
-        </ResponseAssertion>
-        <hashTree/>
         <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="Once Only Controller - открыть главную" enabled="true"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="00 Главная страница ${Server}" enabled="true">
@@ -96,6 +87,15 @@
           <stringProp name="HTTPSampler.method">GET</stringProp>
         </HTTPSamplerProxy>
         <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion - наличие слова Яндекс" enabled="true">
+          <collectionProp name="Asserion.test_strings">
+            <stringProp name="yandex">Яндекс</stringProp>
+          </collectionProp>
+          <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+          <boolProp name="Assertion.assume_success">false</boolProp>
+          <intProp name="Assertion.test_type">16</intProp>
+        </ResponseAssertion>
+        <hashTree/>
           <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer - чтение страницы" enabled="true">
             <stringProp name="ConstantTimer.delay">1000</stringProp>
             <stringProp name="RandomTimer.range">3000.0</stringProp>
@@ -107,7 +107,17 @@
           <stringProp name="HTTPSampler.path">${URL_PATH}</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
         </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion - наличие слова Яндекс" enabled="true">
+          <collectionProp name="Asserion.test_strings">
+            <stringProp name="yandex">Яндекс</stringProp>
+          </collectionProp>
+          <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+          <boolProp name="Assertion.assume_success">false</boolProp>
+          <intProp name="Assertion.test_type">16</intProp>
+        </ResponseAssertion>
         <hashTree/>
+        </hashTree>
         <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer - пауза между итерациями" enabled="true">
           <stringProp name="ConstantTimer.delay">1500</stringProp>
           <stringProp name="RandomTimer.range">800.0</stringProp>

@@ -106,7 +106,8 @@
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="06 Переводчик" enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true"><collectionProp name="Arguments.arguments"/></elementProp>
-            <stringProp name="HTTPSampler.path">/translate</stringProp>
+            <stringProp name="HTTPSampler.domain">translate.${SERVER}</stringProp>
+            <stringProp name="HTTPSampler.path">/</stringProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
           </HTTPSamplerProxy>
           <hashTree/>
